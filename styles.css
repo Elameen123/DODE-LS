@@ -12,6 +12,86 @@ body {
 
 }
 
+.slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.images {
+    display: flex;
+    width: 70%;
+}
+.images img {
+    height: 400px;
+    width: 90%;
+    transition: all 0.3s ease;
+}
+.images input {
+    display: none;
+}
+.dots {
+    display: flex;
+    justify-content: center;
+    margin: 2px;
+}
+.dots label {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid #000000 3px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+.dots label:hover {background: #145eff;}
+
+#img1:checked ~ .m1 {
+    margin-left: -30%;
+}
+#img2:checked ~ .m2 {
+    margin-left: -80%;
+}
+#img3:checked ~ .m3 {
+    margin-left: -140%;
+}
+#img4:checked ~ .m4 {
+    margin-left: -200%;
+}
+#img5:checked ~ .m5 {
+    margin-left: -260%;
+}
+#img6:checked ~ .m6 {
+    margin-left: -320%;
+}
+#img7:checked ~ .m7 {
+    margin-left: -380%;
+}
+#img8:checked ~ .m8 {
+    margin-left: -440%;
+}
+#img9:checked ~ .m9 {
+    margin-left: -500%;
+}
+#img10:checked ~ .m10 {
+    margin-left: -560%;
+}
+#img11:checked ~ .m11 {
+    margin-left: -600%;
+}
+#img12:checked ~ .m12 {
+    margin-left: -140%;
+}
+#img13:checked ~ .m13 {
+    margin-left: -200%;
+}
+#img14:checked ~ .m14 {
+    margin-left: -260%;
+}
+#img15:checked ~ .m15 {
+    margin-left: -320%;
+}
+
+
 header {
     background-image: url('pexels-photomix-company-224924.jpg');
     background-size: cover;
@@ -348,8 +428,37 @@ footer img{
    margin-left: 90px;
 }
 
+/* Components section styles */
+#Components {
+    padding: 1.5rem 60px;
+    text-align: center;
+ }
 
+#Components h2 {
+    margin-bottom: 10rem;
+ }
 
+ .Components {
+    width: 50%;
+    display: inline-table;
+    padding: 3.5rem 1rem;
+    text-align: center;
+ }
 
+.Components img {
+    width: 250px;
+    margin-bottom: 1rem;
+    border-radius: 10%;
+ }
 
+.Components h3{
+    margin-bottom: 1rem;
+}
+ 
+@media only screen and (max-width: 600px) {
+    
+.Components {
+        width: 100%;
+        margin: 2rem 0;
+}
 
